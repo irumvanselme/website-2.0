@@ -1,0 +1,43 @@
+default:
+  image: node:lts-alpine
+
+stages:
+  - test
+  - build
+  - deploy
+
+cache:
+  key: '$CI_PROJECT_ID'
+  paths:
+    - node_modules/
+    - .yarn
+
+script-lint:
+  stage: test
+  script:
+    - yarn install --frozen-lockfile --cache-folder .yarn
+    - yarn lint
+
+script-build:
+  stage: build
+  dependencies:
+    - script-lint
+  script:
+    - yarn install --frozen-lockfile --cache-folder .yarn
+    - yarn build
+  artifacts:
+    expire_in: 1 day
+    paths:
+      - build/
+
+script-deploy-main:
+  stage: deploy
+  image:
+    name: amazon/aws-cli:latest
+    entrypoint: ['']
+  only:
+    - main
+  dependencies:
+    - script-build
+  script:
+    - aws s3 sync build/ s3://staging.moogli.io
