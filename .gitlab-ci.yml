@@ -28,7 +28,7 @@ script-build:
   artifacts:
     expire_in: 1 day
     paths:
-      - build/
+      - out/
 
 script-deploy-main:
   stage: deploy
@@ -40,4 +40,4 @@ script-deploy-main:
   dependencies:
     - script-build
   script:
-    - aws s3 sync build/ s3://staging.moogli.io
+    - aws s3 sync out/ s3://staging.moogli.io
