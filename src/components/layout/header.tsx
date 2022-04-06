@@ -4,7 +4,7 @@ import { Button } from '../ui/button'
 function Link({ children }) {
     return (
         <a
-            className="flex h-full items-center px-4 text-caption text-semantic-warning2-700 hover:text-white focus:font-medium focus:text-white "
+            className="flex h-full items-center px-4 text-caption text-[#FFFFFFCC] hover:text-white focus:font-medium focus:text-white "
             href="#"
         >
             {children}
@@ -32,9 +32,9 @@ export default function Header() {
                     </div>
                     <div className="mx-3 h-6 w-[1px] bg-gray-400" />
                     <div className="flex">
-                        <button className="group flex h-10 w-10 items-center justify-center rounded-3xl hover:bg-[#FFFFFF0D] focus:bg-[#FFFFFF0D]">
+                        <button className="group flex h-10 w-10 items-center justify-center rounded-3xl hover:bg-[#FFFFFF0D] focus:bg-[#FFFFFF0D] group">
                             <svg
-                                className="h-6"
+                                className="h-6 group-focus:h-5"
                                 version="1.1"
                                 id="Livello_1"
                                 xmlns="http://www.w3.org/2000/svg"
@@ -58,14 +58,14 @@ export default function Header() {
                             </svg>
                         </button>
                         <Button
-                            className="h-10 text-white hover:text-white ml-2"
+                            className="h-10 text-white hover:text-white ml-2 hover:bg-[#ffffff11] hover:border-white"
                             variant="subtle"
                             size="sm"
                             iconPosition="right"
                             color="white"
                             icon={() => (
                                 <svg
-                                    className="h-6 w-6"
+                                    className="h-6 w-6 ml-2"
                                     version="1.1"
                                     id="Livello_1"
                                     xmlns="http://www.w3.org/2000/svg"
