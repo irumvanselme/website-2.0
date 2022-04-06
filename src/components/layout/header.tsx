@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import React from 'react'
 import ArrowDownIcon from '../assets/icons/arrow-down'
 import LanguageIcon from '../assets/icons/language'
@@ -8,7 +7,7 @@ import { Button } from '../ui/button'
 function Link({ children }: { children: React.ReactNode }) {
     return (
         <a
-            className="flex h-full items-center px-4 text-caption ease-navbar-moves text-[#FFFFFFCC] hover:text-white focus:font-medium focus:text-white transition"
+            className="flex h-full items-center px-4 text-caption ease-navbar-moves text-tangaroa dark:text-[#FFFFFFCC]  dark:hover:text-white focus:font-medium dark:focus:text-white transition"
             href="#"
         >
             {children}
@@ -18,21 +17,16 @@ function Link({ children }: { children: React.ReactNode }) {
 
 export default function Header() {
     return (
-        <div className="h-12 bg-black text-white xxs:px-2 xs:px-4 sm:px-6 lg:h-16 lg:px-32 xl:px-36 2xl:px-56 3xl:px-[272px] 4xl:px-[464px] 5xl:px-[784px] 6xl:px-[1224px]">
+        <div className="h-12 bg-white dark:bg-black text-[#060F33] xxs:px-2 xs:px-4 sm:px-6 lg:h-16 lg:px-32 xl:px-36 2xl:px-56 3xl:px-[272px] 4xl:px-[464px] 5xl:px-[784px] 6xl:px-[1224px]">
             <div className="flex h-full w-full items-center justify-between">
                 <div className="flex items-center">
                     <div className="mr-4 block lg:hidden">
                         <NavMenuIcon />
                     </div>
-                    <Image
-                        src={'/images/logo-group-horizontal-light.svg'}
-                        width={100}
-                        height={100}
-                        alt="Logo1"
-                    />
+                    <div className="w-[102px] h-6 bg-cover bg-[url('/images/logo-group-horizontal-dark.svg')] dark:bg-[url('/images/logo-group-horizontal-light.svg')]" />
                 </div>
 
-                <div className="flex dark:bg-green-500 h-full items-center">
+                <div className="flex h-full items-center">
                     <div className="hidden lg:block">
                         <div className="flex h-full items-center">
                             <Link>Home</Link>
@@ -49,14 +43,16 @@ export default function Header() {
                             </button>
                         </div>
                         <Button
-                            className="h-8 lg:h-10 text-white hover:text-white ease-navbar-moves ml-2 hover:bg-[#FFFFFF0D] hover:border-white hover:outline-white"
+                            className="h-8 lg:h-10 text-neutrals-400 dark:text-white hover:text-white ease-navbar-moves ml-2 hover:bg-[#FFFFFF0D] hover:border-white hover:outline-white"
                             variant="subtle"
                             size="sm"
                             iconPosition="right"
                             color="white"
                             icon={ArrowDownIcon}
                         >
-                            <span className="text-white">Get the Beta</span>
+                            <span className="text-neutrals-400 dark:text-white">
+                                Get the Beta
+                            </span>
                         </Button>
                     </div>
                 </div>
