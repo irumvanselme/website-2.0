@@ -17,7 +17,7 @@ function Link({ children }: { children: React.ReactNode }) {
 
 export default function Header() {
     return (
-        <div className="h-12 bg-white dark:bg-black text-[#060F33] xxs:px-2 xs:px-4 sm:px-6 lg:h-16 lg:px-32 xl:px-36 2xl:px-56 3xl:px-[272px] 4xl:px-[464px] 5xl:px-[784px] 6xl:px-[1224px]">
+        <div className="h-12 bg-white dark:bg-black text-neutrals-800 xxs:px-2 xs:px-4 sm:px-6 lg:h-16 lg:px-32 xl:px-36 2xl:px-56 3xl:px-[272px] 4xl:px-[464px] 5xl:px-[784px] 6xl:px-[1224px]">
             <div className="flex h-full w-full items-center justify-between">
                 <div className="flex items-center">
                     <div className="mr-4 block lg:hidden">
