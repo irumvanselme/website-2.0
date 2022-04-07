@@ -13,14 +13,14 @@ export default function Hero() {
         let division = document.getElementById('__division') as HTMLDivElement
         if (!division) return
 
-        document.addEventListener('mousemove', e => {
-            let [x, y] = [
-                2350 / 2 - (e.clientY * 2350) / window.innerHeight,
-                2820 / 2 - (e.clientX * 2820) / window.innerWidth
-            ]
-            // console.clear();
-            division.style.transform = `translate(${x / 10}px, ${y / 10}px)`
-        })
+        // document.addEventListener('mousemove', e => {
+        //     let [x, y] = [
+        //         2350 / 2 - (e.clientY * 2350) / window.innerHeight,
+        //         2820 / 2 - (e.clientX * 2820) / window.innerWidth
+        //     ]
+        //     // console.clear();
+        //     division.style.transform = `translate(${x / 10}px, ${y / 10}px)`
+        // })
     }, [])
 
     return (
