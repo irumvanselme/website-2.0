@@ -1,7 +1,12 @@
 import clsx from 'clsx'
-import {createElement} from 'react'
+import { createElement } from 'react'
 
-import {ButtonIconPositions, ButtonProps, ButtonSizes, ButtonVariants} from './types'
+import {
+    ButtonIconPositions,
+    ButtonProps,
+    ButtonSizes,
+    ButtonVariants
+} from './types'
 
 export const disabledStyles = 'disabled:cursor-not-allowed disabled:opacity-75'
 
@@ -138,11 +143,11 @@ export function buttonVariant(variant?: ButtonVariants) {
 }
 
 export function renderButtonIcon({
-                                     icon,
-                                     size,
-                                     additionalClasses,
-                                     iconPosition = 'left'
-                                 }: {
+    icon,
+    size,
+    additionalClasses,
+    iconPosition = 'left'
+}: {
     icon?: ButtonProps['icon']
     size?: ButtonSizes
     additionalClasses?: string

@@ -1,10 +1,10 @@
-import React, {useEffect, useState} from 'react'
+import React, { useEffect, useState } from 'react'
 import ArrowDownIcon from '../assets/icons/arrow-down'
 import LanguageIcon from '../assets/icons/language'
 import NavMenuIcon from '../assets/icons/nav-menu'
-import {Button} from '../ui/button'
+import { Button } from '../ui/button'
 
-function Link({children}: { children: React.ReactNode }) {
+function Link({ children }: { children: React.ReactNode }) {
     return (
         <a
             className="flex h-full items-center px-4 text-caption ease-navbar-moves text-tangaroa dark:text-[#FFFFFFCC]  dark:hover:text-white focus:font-medium dark:focus:text-white transition"
@@ -45,7 +45,7 @@ export default function Header() {
                 <div className="flex h-full w-full items-center justify-between">
                     <div className="flex items-center">
                         <div className="mr-4 block lg:hidden">
-                            <NavMenuIcon/>
+                            <NavMenuIcon />
                         </div>
                         <div
                             className={
@@ -64,12 +64,11 @@ export default function Header() {
                                 <Link>Contact us</Link>
                             </div>
                         </div>
-                        <div className="mx-3 h-6 w-[1px] bg-gray-400 hidden lg:block"/>
+                        <div className="mx-3 h-6 w-[1px] bg-gray-400 hidden lg:block" />
                         <div className="flex">
                             <div className="hidden lg:block">
-                                <button
-                                    className="group flex h-10 w-10 items-center justify-center rounded-3xl hover:bg-[#FFFFFF0D] focus:bg-[#FFFFFF0D] group transition transform">
-                                    <LanguageIcon/>
+                                <button className="group flex h-10 w-10 items-center justify-center rounded-3xl hover:bg-[#FFFFFF0D] focus:bg-[#FFFFFF0D] group transition transform">
+                                    <LanguageIcon />
                                 </button>
                             </div>
                             <Button

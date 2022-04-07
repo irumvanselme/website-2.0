@@ -1,7 +1,7 @@
 import Header from '@/components/layout/header'
-import type {NextPage} from 'next'
+import type { NextPage } from 'next'
 import Head from 'next/head'
-import {Fragment, useEffect} from 'react'
+import { Fragment, useEffect } from 'react'
 import Hero from '@/components/hero'
 import App from './app'
 
@@ -18,9 +18,9 @@ const Home: NextPage = () => {
             </Head>
 
             <main>
-                <Header/>
-                <Hero/>
-                <App/>
+                <Header />
+                <Hero />
+                <App />
             </main>
         </Fragment>
     )

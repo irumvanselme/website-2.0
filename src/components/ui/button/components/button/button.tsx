@@ -1,10 +1,10 @@
-import {forwardRef} from 'react'
+import { forwardRef } from 'react'
 import clsx from 'clsx'
 import Lottie from 'react-lottie'
 
 import LoadingWaveLight from '@/styles/lottie-files/loading-wave-light.json'
 import LoadingWavePurple from '@/styles/lottie-files/loading-wave-purple.json'
-import type {ButtonProps} from './utils'
+import type { ButtonProps } from './utils'
 import {
     buttonBlockStyles,
     buttonSizes,

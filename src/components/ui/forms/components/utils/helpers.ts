@@ -1,7 +1,7 @@
-import {createElement} from 'react'
+import { createElement } from 'react'
 
 import clsxm from '../../../../../utils/clsxm'
-import {IconPosition, InputTextProps, InputTextSizes} from './types'
+import { IconPosition, InputTextProps, InputTextSizes } from './types'
 
 export const disabledStyles =
     'disabled:cursor-not-allowed disabled:bg-neutrals-10 disabled:placeholder:text-neutrals-60 disabled:text-neutrals-60'
@@ -87,11 +87,11 @@ export function renderIconPosition(iconPosition: 'left' | 'right' = 'left') {
 }
 
 export function renderInputIcon({
-                                    icon,
-                                    iconPosition,
-                                    size,
-                                    additionalClasses
-                                }: {
+    icon,
+    iconPosition,
+    size,
+    additionalClasses
+}: {
     icon?: InputTextProps['icon']
     size?: InputTextSizes
     iconPosition?: IconPosition

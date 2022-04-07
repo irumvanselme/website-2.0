@@ -1,4 +1,4 @@
-import {useEffect} from 'react'
+import { useEffect } from 'react'
 import ArrowRightIcon from '@/components/assets/icons/arrow-right'
 
 type CardProps = {
@@ -10,12 +10,12 @@ type CardProps = {
 }
 
 const CardContainer = ({
-                           number = 10,
-                           bgColor = '#FFF12D',
-                           size = 'sm',
-                           top = 0,
-                           left = 0
-                       }: CardProps) => {
+    number = 10,
+    bgColor = '#FFF12D',
+    size = 'sm',
+    top = 0,
+    left = 0
+}: CardProps) => {
     const formatWidths = () => {
         if (size == 'lg') return 'h-[25px] w-[49.2px]'
         else if (size == 'md') return 'h-[25px] w-[32.3px]'
@@ -28,7 +28,7 @@ const CardContainer = ({
                 'text-black text-[12px] flex justify-center items-center absolute rounded-[2.4px] ' +
                 formatWidths()
             }
-            style={{backgroundColor: bgColor, top: top / 10, left: left / 10}}
+            style={{ backgroundColor: bgColor, top: top / 10, left: left / 10 }}
         >
             {number}
         </div>
@@ -210,17 +210,16 @@ export default function Hero() {
                             left={2037}
                         />
 
-                        <div
-                            className="absolute top-[102.4px] text-[2px] left-[119.7px] h-[30.2px] text-center w-[42.7px]">
+                        <div className="absolute top-[102.4px] text-[2px] left-[119.7px] h-[30.2px] text-center w-[42.7px]">
                             <div
                                 className="text-opacity-40 text-white"
-                                style={{lineHeight: '2.8'}}
+                                style={{ lineHeight: '2.8' }}
                             >
                                 #hashtag
                             </div>
                             <div
                                 className="text-[6.4px] text-white font-medium tracking-[-0.05px]"
-                                style={{lineHeight: 1.2}}
+                                style={{ lineHeight: 1.2 }}
                             >
                                 <div>You can</div>
                                 <div>be the change.</div>
@@ -231,7 +230,7 @@ export default function Hero() {
                                     Get the Beta
                                 </div>
                                 <div>
-                                    <ArrowRightIcon/>
+                                    <ArrowRightIcon />
                                 </div>
                             </div>
                         </div>
