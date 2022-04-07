@@ -1,8 +1,8 @@
 import clsx from 'clsx'
-import { createElement } from 'react'
+import {createElement} from 'react'
 
-import type { ButtonSizes } from '../../button/utils'
-import type { IconButtonProps } from './types'
+import type {ButtonSizes} from '../../button/utils'
+import type {IconButtonProps} from './types'
 
 export function buttonSizes(size?: ButtonSizes) {
     switch (size) {
@@ -57,10 +57,10 @@ export function buttonIconClasses(size?: ButtonSizes) {
 }
 
 export function renderButtonIcon({
-    icon,
-    size,
-    additionalClasses
-}: {
+                                     icon,
+                                     size,
+                                     additionalClasses
+                                 }: {
     icon?: IconButtonProps['icon']
     size?: ButtonSizes
     additionalClasses?: string
