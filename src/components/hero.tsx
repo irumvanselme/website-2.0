@@ -29,7 +29,7 @@ export default function Hero() {
                 className="h-screen bg-[#F7F9FC] dark:bg-black overflow-hidden flex items-center justify-center -mt-10 lg:-mt-16"
                 id="__hero"
             >
-                <div className="h-[235px] w-[280px] scale-[10] bg-red-500 p-[20px] will-change-transform">
+                <div className="h-[235px] w-[280px] scale-[10] bg-black p-[20px] will-change-transform">
                     <div id="__division">
                         <div className="grid grid-cols-5">
                             <CardContainer number={1} />
